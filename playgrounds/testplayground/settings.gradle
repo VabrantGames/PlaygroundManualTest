@@ -1,0 +1,16 @@
+include ':shared'
+include ':singles'
+include ':singleslwjgl3'
+include ':testproject'
+include ':testprojectlwjgl2'
+include ':testprojectlwjgl3'
+include ':javaproject'
+include ':shapedrawercircle'
+include ':shapedrawercirclelwjgl2'
+include ':shapedrawercirclelwjgl3'
+
+project(':testprojectlwjgl2').projectDir = new File('/testproject/launchers/lwjgl2')
+project(':testprojectlwjgl3').projectDir = new File('/testproject/launchers/lwjgl3')
+project(':shapedrawercirclelwjgl2').projectDir = new File('/shapedrawercircle/launchers/lwjgl2')
+project(':shapedrawercirclelwjgl3').projectDir = new File('/shapeDrawercircle/launchers/lwjgl3')
+project(':singleslwjgl3').projectDir = new File('/singles/launchers/lwjgl3')

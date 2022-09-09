@@ -1,0 +1,45 @@
+dependencies {
+    implementation project(':shapedrawercircle')
+    implementation "com.badlogicgames.gdx:gdx-backend-lwjgl3:$gdxVersion"
+    implementation "com.badlogicgames.gdx:gdx-platform:$gdxVersion:natives-desktop"
+
+
+//    afterEvaluate {
+//        def version = -1;
+
+//        configurations.runtimeClasspath.resolvedConfiguration.resolvedArtifacts.each {
+////            println it.moduleVersion.id
+//            def id = it.moduleVersion.id
+//            def ver = "$id.version"
+//            String g = "$id.group"
+//
+//            if (g.equals("com.badlogicgames.gdx")) {
+////                println "We found it!!"
+//                version = ver
+////                it.moduleVersion = 2
+//                return true
+//            }
+//
+////            println id.group
+////            println "${id.version}"
+//        }
+////    }
+//
+//    configurations.runtimeClasspath.each {
+//        String f =  it.name
+//
+//        if (f.startsWith("gdx")) {
+//            String v = f.substring(f.indexOf("-") + 1, f.lastIndexOf("."))
+//            println v
+//        }
+//    }
+//
+//    if (version != -1) {
+//
+////        implementation group: "com.badlogicgames.gdx", name: 'gdx-backend-lwjgl3', version: 1O.9.10
+//    }
+
+//    implementation "com.badlogicgames.gdx:gdx-backend-lwjgl3:1.10.0"
+
+
+}

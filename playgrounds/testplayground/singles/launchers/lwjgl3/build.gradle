@@ -1,0 +1,14 @@
+//Project assets (Assets specific to this project)
+sourceSets.main.resources.srcDirs += [project.file('../../assets').path]
+
+//Playground assets (Assets specific to all of its projects)
+//sourceSets.main.resources.srcDirs += [project.file()]
+
+//Playground assets (Shared with all playgrounds and projects)
+sourceSets.main.resources.srcDirs += [rootProject.file('assets').path]
+
+dependencies {
+    implementation project(':singles')
+    implementation "com.badlogicgames.gdx:gdx-backend-lwjgl3:$gdxVersion"
+    implementation "com.badlogicgames.gdx:gdx-platform:$gdxVersion:natives-desktop"
+}

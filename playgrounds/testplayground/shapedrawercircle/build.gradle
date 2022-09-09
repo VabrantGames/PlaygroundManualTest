@@ -1,0 +1,44 @@
+configurations {
+    deployable
+}
+
+dependencies {
+    implementation project(':shared')
+//    implementation "com.badlogicgames.gdx:gdx:$"
+    implementation "space.earlygrey:shapedrawer:$shapeDrawerVersion"
+//    deplyable "com.test:bob:0.5.4"
+
+    afterEvaluate {
+        project.configurations.api.dependencies.forEach { e ->
+
+//            println
+        }
+
+        project.configurations.each {
+//            println it.name
+        }
+
+        project.configurations.archives.dependencies.each {
+//            print it.name
+        }
+
+        configurations.runtimeClasspath.resolvedConfiguration.resolvedArtifacts.each {
+//            println it.moduleVersion.id
+            def id = it.moduleVersion.id
+            def ver = "$id.version"
+            String g = "$id.group"
+
+            if (g.equals("com.badlogicgames.gdx")) {
+//                println "We found it!!"
+            }
+
+//            println id.group
+//            println "${id.version}"
+        }
+
+//        project.configurations.implementation. {
+//
+//        }
+    }
+
+}
